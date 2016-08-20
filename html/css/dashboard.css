@@ -1,0 +1,49 @@
+.container {
+    margin-top: 2em;
+}
+
+.row {
+    width: 1140px !important;
+}
+
+.metric {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0;
+    color: white;
+}
+
+.metric .icon {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    color: rgba(0,0,0,0.15);
+    font-size: 90px;
+    z-index: 0;
+}
+
+.metric-inner {
+    padding: 1em;
+    padding-bottom: 0.5em; 
+    background-color: #3498db; 
+}
+
+.metric-inner h3 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.metric-inner p {
+    font-size: 18px;
+    position:relative;
+    z-index: 10;
+}
+
+.metric-bottom {
+    font-size: 12px;
+    padding: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #2980b9;
+}
