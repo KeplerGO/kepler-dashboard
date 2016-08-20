@@ -32,6 +32,8 @@
 .metric-inner h3 {
     font-size: 52px;
     font-weight: bold;
+    position:relative;
+    z-index: 10;
 }
 
 .metric-inner p {
