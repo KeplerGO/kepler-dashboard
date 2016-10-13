@@ -6,3 +6,9 @@ dashboard:
 
 metrics:
 	python update-metrics.py
+
+push:
+	git add kepler-dashboard.json
+	git commit -m "Regular dashboard update"
+	git push
+
