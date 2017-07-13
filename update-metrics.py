@@ -49,6 +49,11 @@ def get_planet_metrics():
     df = pd.read_csv(NEXSCI_ENDPOINT +
                      '?table=exoplanets&select=count(*)&where=pl_kepflag>0')
     metrics['kepler_confirmed_count'] = int(df['count(*)'][0])
+    # Count Kepler confirmed planets with mass estimates
+    df = pd.read_csv(NEXSCI_ENDPOINT +
+                     '?table=exoplanets&select=count(*)&where=pl_kepflag>0+and+pl_masselim=0')
+    metrics['kepler_confirmed_with_mass_count'] = int(df['count(*)'][0])
+
     # Count K2 candidate planets
     df = pd.read_csv(NEXSCI_ENDPOINT +
                      '?table=k2candidates&select=count(*)'
@@ -58,6 +63,10 @@ def get_planet_metrics():
     df = pd.read_csv(NEXSCI_ENDPOINT +
                      '?table=exoplanets&select=count(*)&where=pl_k2flag>0')
     metrics['k2_confirmed_count'] = int(df['count(*)'][0])
+    # Count K2 confirmed planets with mass estimates
+    df = pd.read_csv(NEXSCI_ENDPOINT +
+                     '?table=exoplanets&select=count(*)&where=pl_k2flag>0+and+pl_masselim=0')
+    metrics['k2_confirmed_with_mass_count'] = int(df['count(*)'][0])
     return metrics
 
 

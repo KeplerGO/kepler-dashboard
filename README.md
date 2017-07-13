@@ -1,4 +1,4 @@
-# A dashboard for NASA's Kepler and K2 missions
+# An automated dashboard for NASA's Kepler and K2 missions
 ***Because Kepler is ran from the heart of Silicon Valley.***
 
 ## Usage
