@@ -1,6 +1,6 @@
 {
  "description": "This file contains metrics which quantify the success of NASA's Kepler and K2 missions.",
- "last_update": "2017-09-05T20:19:50.952294",
+ "last_update": "2017-09-06T06:13:33.370228",
  "planets": {
   "kepler_candidates_count": 4496,
   "kepler_confirmed_count": 2337,
@@ -10,30 +10,34 @@
   "k2_confirmed_with_mass_count": 41
  },
  "publications": {
-  "publication_count": 2342,
   "k2_count": 287,
+  "kepler_fraction": 0.8774551665243382,
+  "k2_author_count": 1239,
+  "kepler_citation_count": 58801,
+  "publication_count": 2342,
+  "kepler_count": 2055,
+  "refereed_count": 2091,
   "astrophysics_count": 1232,
   "kepler_refereed_count": 1845,
-  "first_author_count": 1111,
-  "k2_first_author_count": 186,
-  "refereed_count": 2091,
-  "kepler_count": 2055,
-  "kepler_author_count": 3566,
-  "citation_count": 61793,
-  "k2_fraction": 0.12254483347566182,
-  "author_count": 4038,
-  "k2_refereed_count": 246,
+  "exoplanets_fraction": 0.4735269000853971,
+  "kepler_phd_count": 37,
   "kepler_first_author_count": 1011,
-  "k2_author_count": 1239,
-  "exoplanets_count": 1109,
-  "phd_count": 42,
-  "kepler_fraction": 0.8774551665243382,
+  "k2_first_author_count": 186,
   "astrophysics_fraction": 0.5260461144321094,
-  "exoplanets_fraction": 0.4735269000853971
+  "exoplanets_count": 1109,
+  "k2_refereed_count": 246,
+  "k2_fraction": 0.12254483347566182,
+  "kepler_author_count": 3566,
+  "phd_count": 42,
+  "author_count": 4038,
+  "k2_citation_count": 2992,
+  "k2_phd_count": 5,
+  "citation_count": 61793,
+  "first_author_count": 1111
  },
  "twitter": {
   "keplergo_followers_count": 719,
-  "nasakepler_followers_count": 614294,
-  "followers_count": 615013
+  "nasakepler_followers_count": 614358,
+  "followers_count": 615077
  }
 }
