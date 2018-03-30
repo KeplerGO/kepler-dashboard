@@ -67,6 +67,9 @@ def get_planet_metrics():
     df = pd.read_csv(NEXSCI_ENDPOINT +
                      '?table=exoplanets&select=count(*)&where=pl_k2flag>0+and+pl_masselim=0')
     metrics['k2_confirmed_with_mass_count'] = int(df['count(*)'][0])
+    # Combined planet counts
+    metrics['candidates_count'] = metrics['kepler_candidates_count'] + metrics['k2_candidates_count']
+    metrics['confirmed_count'] = metrics['kepler_confirmed_count'] + metrics['k2_confirmed_count']
     return metrics
 
 
