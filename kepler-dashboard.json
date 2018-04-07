@@ -1,22 +1,38 @@
 {
  "description": "This file contains metrics which quantify the success of NASA's Kepler and K2 missions.",
- "last_update": "2018-04-05T11:30:35.312885",
+ "last_update": "2018-04-07T11:54:03.802163",
  "planets": {
   "kepler_candidates_count": 4496,
-  "kepler_confirmed_count": 2342,
-  "kepler_confirmed_with_mass_count": 190,
+  "kepler_confirmed_count": 2343,
+  "kepler_confirmed_with_mass_count": 239,
   "k2_candidates_count": 742,
-  "k2_confirmed_count": 307,
-  "k2_confirmed_with_mass_count": 123,
+  "k2_confirmed_count": 309,
+  "k2_confirmed_with_mass_count": 66,
+  "kepler_earth_size_count": 338,
+  "kepler_super_earth_size_count": 715,
+  "kepler_neptune_size_count": 1104,
+  "kepler_jupiter_size_count": 139,
+  "kepler_larger_size_count": 18,
+  "k2_earth_size_count": 28,
+  "k2_super_earth_size_count": 89,
+  "k2_neptune_size_count": 153,
+  "k2_jupiter_size_count": 31,
+  "k2_larger_size_count": 5,
   "candidates_count": 5238,
-  "confirmed_count": 2649
+  "confirmed_count": 2652,
+  "confirmed_with_mass_count": 305,
+  "earth_size_count": 366,
+  "super_earth_size_count": 804,
+  "neptune_size_count": 1257,
+  "jupiter_size_count": 170,
+  "larger_size_count": 23
  },
  "publications": {
   "publication_count": 2632,
   "kepler_count": 2248,
   "k2_count": 384,
   "exoplanets_count": 1245,
-  "astrophysics_count": 1386,
+  "astrophysics_count": 1387,
   "refereed_count": 2342,
   "kepler_refereed_count": 2013,
   "k2_refereed_count": 329,
@@ -35,11 +51,11 @@
   "kepler_fraction": 0.8541033434650456,
   "k2_fraction": 0.1458966565349544,
   "exoplanets_fraction": 0.47302431610942247,
-  "astrophysics_fraction": 0.526595744680851
+  "astrophysics_fraction": 0.5269756838905775
  },
  "twitter": {
-  "keplergo_followers_count": 1280,
-  "nasakepler_followers_count": 626436,
-  "followers_count": 627716
+  "keplergo_followers_count": 1292,
+  "nasakepler_followers_count": 626512,
+  "followers_count": 627804
  }
 }
