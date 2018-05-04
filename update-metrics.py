@@ -39,67 +39,68 @@ def get_planet_metrics():
     import pandas as pd
     print('Retrieving planet metrics from NEXSCI...')
     NEXSCI_ENDPOINT = 'http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI'
+    KEPLER_DISCOVERY = "pl_facility+like+%27%25Kepler%25%27"
+    K2_DISCOVERY = "pl_facility+like+%27%25K2%25%27"
+
     metrics = collections.OrderedDict()
     # Count the number of Kepler candidate planets
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=cumulative&select=count(*)'
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=cumulative&select=count(*)'
                      '&where=koi_pdisposition+like+%27CANDIDATE%27')
     metrics['kepler_candidates_count'] = int(df['count(*)'][0])
     # Count Kepler confirmed planets
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_kepflag>0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + KEPLER_DISCOVERY)
     metrics['kepler_confirmed_count'] = int(df['count(*)'][0])
     # Count Kepler confirmed planets with mass estimates
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_kepflag>0+and+pl_masse+is+not+null')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + KEPLER_DISCOVERY + '+and+pl_masse+is+not+null')
     metrics['kepler_confirmed_with_mass_count'] = int(df['count(*)'][0])
 
     # Count K2 candidate planets
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=k2candidates&select=count(*)'
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=k2candidates&select=count(*)'
                      '&where=k2c_disp+like+%27C%25%27+and+k2c_recentflag=1')
     metrics['k2_candidates_count'] = int(df['count(*)'][0])
     # Count K2 confirmed planets
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_k2flag>0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + K2_DISCOVERY)
     metrics['k2_confirmed_count'] = int(df['count(*)'][0])
     # Count K2 confirmed planets with mass estimates
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_k2flag>0+and+pl_masse+is+not+null')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + K2_DISCOVERY + '+and+pl_masse+is+not+null')
     metrics['k2_confirmed_with_mass_count'] = int(df['count(*)'][0])
 
     # Count number of Kepler planets by size bin
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_kepflag>0+and+pl_rade<1.25')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + KEPLER_DISCOVERY + '+and+pl_rade<1.25')
     metrics['kepler_earth_size_count'] = int(df['count(*)'][0])
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_kepflag>0+and+pl_rade>=1.25+and+pl_rade<2.0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + KEPLER_DISCOVERY + '+and+pl_rade>=1.25+and+pl_rade<2.0')
     metrics['kepler_super_earth_size_count'] = int(df['count(*)'][0])
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_kepflag>0+and+pl_rade>=2.0+and+pl_rade<6.0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + KEPLER_DISCOVERY + '+and+pl_rade>=2.0+and+pl_rade<6.0')
     metrics['kepler_neptune_size_count'] = int(df['count(*)'][0])
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_kepflag>0+and+pl_rade>=6.0+and+pl_rade<15.0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + KEPLER_DISCOVERY + '+and+pl_rade>=6.0+and+pl_rade<15.0')
     metrics['kepler_jupiter_size_count'] = int(df['count(*)'][0])
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_kepflag>0+and+pl_rade>=15.0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + KEPLER_DISCOVERY + '+and+pl_rade>=15.0')
     metrics['kepler_larger_size_count'] = int(df['count(*)'][0])
 
     # Count number of K2 planets by size bin
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_k2flag>0+and+pl_rade<1.25')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + K2_DISCOVERY + '+and+pl_rade<1.25')
     metrics['k2_earth_size_count'] = int(df['count(*)'][0])
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_k2flag>0+and+pl_rade>=1.25+and+pl_rade<2.0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + K2_DISCOVERY + '+and+pl_rade>=1.25+and+pl_rade<2.0')
     metrics['k2_super_earth_size_count'] = int(df['count(*)'][0])
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_k2flag>0+and+pl_rade>=2.0+and+pl_rade<6.0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + K2_DISCOVERY + '+and+pl_rade>=2.0+and+pl_rade<6.0')
     metrics['k2_neptune_size_count'] = int(df['count(*)'][0])
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_k2flag>0+and+pl_rade>=6.0+and+pl_rade<15.0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + K2_DISCOVERY + '+and+pl_rade>=6.0+and+pl_rade<15.0')
     metrics['k2_jupiter_size_count'] = int(df['count(*)'][0])
-    df = pd.read_csv(NEXSCI_ENDPOINT +
-                     '?table=exoplanets&select=count(*)&where=pl_k2flag>0+and+pl_rade>=15.0')
+    df = pd.read_csv(NEXSCI_ENDPOINT + '?table=exoplanets&select=count(*)&where='
+                     + K2_DISCOVERY + '+and+pl_rade>=15.0')
     metrics['k2_larger_size_count'] = int(df['count(*)'][0])
 
     # Combined planet counts
