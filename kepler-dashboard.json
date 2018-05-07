@@ -1,6 +1,6 @@
 {
  "description": "This file contains metrics which quantify the success of NASA's Kepler and K2 missions.",
- "last_update": "2018-05-04T10:42:18.561810",
+ "last_update": "2018-05-07T09:11:37.191523",
  "planets": {
   "kepler_candidates_count": 4496,
   "kepler_confirmed_count": 2327,
@@ -28,11 +28,11 @@
   "larger_size_count": 18
  },
  "publications": {
-  "publication_count": 2735,
-  "kepler_count": 2326,
+  "publication_count": 2737,
+  "kepler_count": 2328,
   "k2_count": 409,
-  "exoplanets_count": 1292,
-  "astrophysics_count": 1443,
+  "exoplanets_count": 1293,
+  "astrophysics_count": 1444,
   "refereed_count": 2399,
   "kepler_refereed_count": 2058,
   "k2_refereed_count": 341,
@@ -48,14 +48,14 @@
   "kepler_first_author_count": 1106,
   "k2_author_count": 1655,
   "k2_first_author_count": 252,
-  "kepler_fraction": 0.8504570383912249,
-  "k2_fraction": 0.14954296160877514,
-  "exoplanets_fraction": 0.47239488117001827,
-  "astrophysics_fraction": 0.5276051188299817
+  "kepler_fraction": 0.8505663134819145,
+  "k2_fraction": 0.1494336865180855,
+  "exoplanets_fraction": 0.4724150529777128,
+  "astrophysics_fraction": 0.5275849470222872
  },
  "twitter": {
-  "keplergo_followers_count": 1434,
-  "nasakepler_followers_count": 627643,
-  "followers_count": 629077
+  "keplergo_followers_count": 1446,
+  "nasakepler_followers_count": 627724,
+  "followers_count": 629170
  }
 }
