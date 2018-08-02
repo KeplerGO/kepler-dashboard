@@ -1,9 +1,9 @@
 {
  "description": "This file contains metrics which quantify the success of NASA's Kepler and K2 missions.",
- "last_update": "2018-08-02T15:05:59.787986",
+ "last_update": "2018-08-02T15:30:51.071040",
  "planets": {
   "kepler_confirmed_count": 2327,
-  "kepler_confirmed_with_mass_count": 325,
+  "kepler_confirmed_with_mass_count": 259,
   "kepler_confirmed_with_mass_10percent_count": 33,
   "kepler_confirmed_with_radius_10percent_count": 851,
   "kepler_confirmed_with_mass_radius_10percent_count": 28,
@@ -13,7 +13,7 @@
   "kepler_jupiter_size_count": 144,
   "kepler_larger_size_count": 17,
   "k2_confirmed_count": 323,
-  "k2_confirmed_with_mass_count": 70,
+  "k2_confirmed_with_mass_count": 62,
   "k2_confirmed_with_mass_10percent_count": 16,
   "k2_confirmed_with_radius_10percent_count": 178,
   "k2_confirmed_with_mass_radius_10percent_count": 13,
@@ -26,7 +26,7 @@
   "k2_candidates_count": 784,
   "candidates_count": 5280,
   "confirmed_count": 2650,
-  "confirmed_with_mass_count": 395,
+  "confirmed_with_mass_count": 321,
   "earth_size_count": 364,
   "super_earth_size_count": 809,
   "neptune_size_count": 1282,
@@ -61,8 +61,8 @@
  },
  "twitter": {
   "keplergo_followers_count": 1668,
-  "nasakepler_followers_count": 609265,
-  "followers_count": 610933
+  "nasakepler_followers_count": 609266,
+  "followers_count": 610934
  },
  "lightkurve": {
   "forks_count": 26,
