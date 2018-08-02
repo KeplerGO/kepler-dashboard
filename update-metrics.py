@@ -76,7 +76,7 @@ def get_planet_metrics():
     is_neptune_size = (df['fpl_rade'] >= 2.0) & (df['fpl_rade'] < 6.0)
     is_jupiter_size = (df['fpl_rade'] >= 6.0) & (df['fpl_rade'] < 15.0)
     is_larger_size = df['fpl_rade'] >= 15.0
-    has_mass = df['fpl_bmassprov'] == 'Mass'
+    has_mass = (df['fpl_bmassprov'] == 'Mass') & (df['fpl_bmasselim'] != 1)
     has_mass_10percent = has_mass & (((df['fpl_bmasseerr1'] - df['fpl_bmasseerr2']) / df['fpl_bmasse']) < 0.2)
     has_radius_10percent = (((df['fpl_radeerr1'] - df['fpl_radeerr2']) / df['fpl_rade']) < 0.2)
 
