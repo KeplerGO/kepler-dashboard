@@ -67,7 +67,7 @@ def get_planet_metrics():
     """Returns a dict containing Kepler/K2 planet discovery metrics."""
     print('Retrieving planet metrics from NEXSCI...')
     df = get_composite_planet_table()
-    df.to_csv('nexsci-composite-planet-table.csv')
+    df.to_csv('data/nexsci-composite-planet-table.csv')
 
     is_kepler = df['pl_facility'] == 'Kepler'
     is_k2 = df['pl_facility'] == 'K2'
