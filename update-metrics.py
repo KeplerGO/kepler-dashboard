@@ -104,12 +104,12 @@ def get_planet_metrics():
 
     # Count the number of Kepler candidate planets
     df = pd.read_csv(NEXSCI_ENDPOINT + '?table=cumulative&select=count(*)'
-                     '&where=koi_pdisposition+like+%27CANDIDATE%27')
+                     '&where=koi_disposition+like+%27CANDIDATE%27')
     metrics['kepler_candidates_count'] = int(df['count(*)'][0])
 
     # Count K2 candidate planets
     df = pd.read_csv(NEXSCI_ENDPOINT + '?table=k2candidates&select=count(*)'
-                     '&where=k2c_disp+like+%27C%25%27+and+k2c_recentflag=1')
+                     '&where=k2c_disp+like+%27CAN%25%27+and+k2c_recentflag=1')
     metrics['k2_candidates_count'] = int(df['count(*)'][0])
 
     # Combined planet counts
