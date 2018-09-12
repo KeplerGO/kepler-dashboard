@@ -1,6 +1,6 @@
 {
  "description": "This file contains metrics which quantify the success of NASA's Kepler and K2 missions.",
- "last_update": "2018-09-11T21:17:21.524802",
+ "last_update": "2018-09-12T14:24:03.130962",
  "planets": {
   "kepler_confirmed_count": 2327,
   "kepler_confirmed_with_mass_count": 259,
@@ -22,9 +22,9 @@
   "k2_neptune_size_count": 174,
   "k2_jupiter_size_count": 30,
   "k2_larger_size_count": 2,
-  "kepler_candidates_count": 4496,
-  "k2_candidates_count": 784,
-  "candidates_count": 5280,
+  "kepler_candidates_count": 2244,
+  "k2_candidates_count": 493,
+  "candidates_count": 2737,
   "confirmed_count": 2653,
   "confirmed_with_mass_count": 323,
   "earth_size_count": 364,
@@ -61,14 +61,14 @@
  },
  "twitter": {
   "keplergo_followers_count": 1740,
-  "nasakepler_followers_count": 611742,
-  "followers_count": 613482
+  "nasakepler_followers_count": 611851,
+  "followers_count": 613591
  },
  "lightkurve": {
   "forks_count": 37,
   "watchers_count": 48,
   "stargazers_count": 48,
-  "open_issues_count": 74,
+  "open_issues_count": 75,
   "subscribers_count": 12
  }
 }
