@@ -1,6 +1,6 @@
 {
  "description": "This file contains metrics which quantify the success of NASA's Kepler and K2 missions.",
- "last_update": "2018-09-23T14:23:31.471949",
+ "last_update": "2018-09-23T15:01:32.544701",
  "planets": {
   "kepler_confirmed_count": 2327,
   "kepler_confirmed_with_mass_count": 259,
@@ -60,9 +60,9 @@
   "astrophysics_fraction": 0.5272790055248618
  },
  "twitter": {
-  "keplergo_followers_count": 1767,
-  "nasakepler_followers_count": 612679,
-  "followers_count": 614446
+  "keplergo_followers_count": 1768,
+  "nasakepler_followers_count": 612686,
+  "followers_count": 614454
  },
  "lightkurve": {
   "forks_count": 37,
