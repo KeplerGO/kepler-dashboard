@@ -1,6 +1,6 @@
 {
  "description": "This file contains metrics which quantify the success of NASA's Kepler and K2 missions.",
- "last_update": "2018-10-12T13:59:43.917551",
+ "last_update": "2018-10-15T15:45:32.000925",
  "planets": {
   "kepler_confirmed_count": 2327,
   "kepler_confirmed_with_mass_count": 260,
@@ -34,41 +34,41 @@
   "larger_size_count": 19
  },
  "publications": {
-  "publication_count": 2955,
-  "kepler_count": 2449,
-  "k2_count": 506,
-  "exoplanets_count": 1399,
-  "astrophysics_count": 1556,
-  "refereed_count": 2582,
-  "kepler_refereed_count": 2170,
-  "k2_refereed_count": 412,
-  "citation_count": 81170,
-  "kepler_citation_count": 75039,
-  "k2_citation_count": 6131,
-  "phd_count": 57,
-  "kepler_phd_count": 49,
+  "publication_count": 2938,
+  "kepler_count": 2441,
+  "k2_count": 497,
+  "exoplanets_count": 1393,
+  "astrophysics_count": 1545,
+  "refereed_count": 2604,
+  "kepler_refereed_count": 2184,
+  "k2_refereed_count": 420,
+  "citation_count": 81930,
+  "kepler_citation_count": 75684,
+  "k2_citation_count": 6246,
+  "phd_count": 58,
+  "kepler_phd_count": 50,
   "k2_phd_count": 8,
-  "author_count": 4947,
-  "first_author_count": 1321,
-  "kepler_author_count": 4135,
-  "kepler_first_author_count": 1154,
-  "k2_author_count": 1835,
-  "k2_first_author_count": 292,
-  "kepler_fraction": 0.8287648054145516,
-  "k2_fraction": 0.1712351945854484,
-  "exoplanets_fraction": 0.4734348561759729,
-  "astrophysics_fraction": 0.5265651438240271
+  "author_count": 4963,
+  "first_author_count": 1322,
+  "kepler_author_count": 4141,
+  "kepler_first_author_count": 1155,
+  "k2_author_count": 1848,
+  "k2_first_author_count": 293,
+  "kepler_fraction": 0.8308373042886317,
+  "k2_fraction": 0.16916269571136827,
+  "exoplanets_fraction": 0.47413206262763785,
+  "astrophysics_fraction": 0.5258679373723621
  },
  "twitter": {
-  "keplergo_followers_count": 1805,
-  "nasakepler_followers_count": 619276,
-  "followers_count": 621081
+  "keplergo_followers_count": 1818,
+  "nasakepler_followers_count": 619218,
+  "followers_count": 621036
  },
  "lightkurve": {
-  "forks_count": 42,
+  "forks_count": 43,
   "watchers_count": 53,
   "stargazers_count": 53,
-  "open_issues_count": 76,
+  "open_issues_count": 80,
   "subscribers_count": 13
  }
 }
