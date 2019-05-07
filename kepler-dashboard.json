@@ -1,6 +1,6 @@
 {
  "description": "This file contains metrics which quantify the success of NASA's Kepler and K2 missions.",
- "last_update": "2019-04-30T16:18:54.777889",
+ "last_update": "2019-05-07T11:35:01.018542",
  "planets": {
   "kepler_confirmed_count": 2342,
   "kepler_confirmed_with_mass_count": 271,
@@ -34,41 +34,41 @@
   "larger_size_count": 20
  },
  "publications": {
-  "publication_count": 3197,
-  "kepler_count": 2626,
-  "k2_count": 571,
-  "exoplanets_count": 1505,
-  "astrophysics_count": 1692,
-  "refereed_count": 2834,
-  "kepler_refereed_count": 2339,
-  "k2_refereed_count": 495,
-  "citation_count": 92420,
-  "kepler_citation_count": 84312,
+  "publication_count": 3221,
+  "kepler_count": 2645,
+  "k2_count": 576,
+  "exoplanets_count": 1514,
+  "astrophysics_count": 1707,
+  "refereed_count": 2851,
+  "kepler_refereed_count": 2353,
+  "k2_refereed_count": 498,
+  "citation_count": 92422,
+  "kepler_citation_count": 84314,
   "k2_citation_count": 8108,
-  "phd_count": 61,
-  "kepler_phd_count": 52,
+  "phd_count": 62,
+  "kepler_phd_count": 53,
   "k2_phd_count": 9,
-  "author_count": 5334,
-  "first_author_count": 1417,
-  "kepler_author_count": 4322,
-  "kepler_first_author_count": 1223,
-  "k2_author_count": 2143,
+  "author_count": 5340,
+  "first_author_count": 1421,
+  "kepler_author_count": 4325,
+  "kepler_first_author_count": 1227,
+  "k2_author_count": 2148,
   "k2_first_author_count": 334,
-  "kepler_fraction": 0.82139505786675,
-  "k2_fraction": 0.17860494213324993,
-  "exoplanets_fraction": 0.4707538317172349,
-  "astrophysics_fraction": 0.529246168282765
+  "kepler_fraction": 0.8211735485873952,
+  "k2_fraction": 0.17882645141260478,
+  "exoplanets_fraction": 0.47004036013660355,
+  "astrophysics_fraction": 0.5299596398633964
  },
  "twitter": {
-  "keplergo_followers_count": 2033,
-  "nasakepler_followers_count": 629026,
-  "followers_count": 631059
+  "keplergo_followers_count": 2035,
+  "nasakepler_followers_count": 628929,
+  "followers_count": 630964
  },
  "lightkurve": {
-  "forks_count": 56,
-  "watchers_count": 94,
-  "stargazers_count": 94,
-  "open_issues_count": 107,
+  "forks_count": 57,
+  "watchers_count": 95,
+  "stargazers_count": 95,
+  "open_issues_count": 103,
   "subscribers_count": 15
  }
 }
