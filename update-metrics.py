@@ -33,9 +33,7 @@ def get_twitter_metrics():
     print('Retrieving social media metrics from Twitter...')
     metrics = collections.OrderedDict()
     metrics['keplergo_followers_count'] = get_twitter_followers('KeplerGO')
-    metrics['nasakepler_followers_count'] = get_twitter_followers('NASAKepler')
-    metrics['followers_count'] = (metrics['keplergo_followers_count'] +
-                                  metrics['nasakepler_followers_count'])
+    metrics['followers_count'] = (metrics['keplergo_followers_count'])
     return metrics
 
 
@@ -68,6 +66,7 @@ def get_planet_metrics():
     print('Retrieving planet metrics from NEXSCI...')
     df = get_composite_planet_table()
     df.to_csv('data/nexsci-composite-planet-table.csv')
+    df.to_hdf('data/nexsci-composite-planet-table.h5', 'planets', mode='w')
 
     is_kepler = df['pl_facility'] == 'Kepler'
     is_k2 = df['pl_facility'] == 'K2'
